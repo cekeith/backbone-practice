@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/lib/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <div id="nav">
+          <ul>
+            <li data-url="home" class="navItem">Home</li>
+            <li data-url="albums" class="navItem">Albums</li>
+            <li data-url="genres" class="navItem">Genres</li>
+            <li data-url="artists" class="navItem">Artists</li>
+          </ul>
+        </div>
+        <div id="container"></div>
+        <script id="errorTemplate" type="text/template">
+          <img class="error" src="img/pac-404.png">
+        </script>
+        <!-- <script id="addItem" type="text/template">
+            <label>ID:</label><input class="idAdd" type="text"></input><br>
+            <label>CONTENT:</label><input class="contentAdd" type="text"></input><br>
+
+            <button class="add">Add</button>
+        </script>
+        <script id="itemTemplate" type="text/template">
+            <input type="checkbox"></input> id: <%= id %> content: <%= content %>
+        </script>
+        <script id="deleteTemplate" type="text/template">
+             <button class="delete">Delete</button>
+        </script> -->
+        <script src="js/lib/require.js" data-main="js/main.js"></script>
+    </body>
+</html>

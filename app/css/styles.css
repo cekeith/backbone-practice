@@ -1,0 +1,16 @@
+div {
+  margin: 50px; }
+
+div ul {
+  display: flex;
+  padding: 10px;
+  list-style: none;
+  justify-content: center; }
+
+li {
+  padding: 3px; }
+
+img {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%; }
