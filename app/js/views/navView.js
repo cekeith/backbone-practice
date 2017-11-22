@@ -2,10 +2,11 @@ define([
   'jquery',
   'underscore',
   'backbone',
-  '../router'], function($, _, Backbone, AppRouter){
+  'handlebars',
+  '../router'], function($, _, Backbone, handlebars, AppRouter){
   var NavView = Backbone.View.extend({
     events: {
-      "click": "onClick"
+      "click .navItem": "onClick"
     },
     onClick: function(e){
       var router = new AppRouter;

@@ -1,6 +1,9 @@
 define([
   'underscore',
   'backbone',
+  'handlebars',
+  'models/artist',
+  'collections/artistCollection',
   'views/navView',
   'views/artistsView',
   'views/albumsView',
@@ -10,6 +13,9 @@ define([
   'router'], function(
     _,
     Backbone,
+    handlebars,
+    Artist,
+    Artists,
     NavView,
     ArtistsView,
     AlbumsView,
@@ -18,9 +24,9 @@ define([
     ErrorView,
     AppRouter){
       initialize = function(){
-        console.log("this works so far")
           var router = new AppRouter();
           Backbone.history.start();
+          var bus = _.extend({}, Backbone.Events);
           var navView = new NavView({ el: "#nav"})
       };
 

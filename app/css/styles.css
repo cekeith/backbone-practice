@@ -8,7 +8,8 @@ div ul {
   justify-content: center; }
 
 li {
-  padding: 3px; }
+  padding: 3px;
+  margin: 2px; }
 
 img {
   width: 50%;

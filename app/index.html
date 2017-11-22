@@ -19,21 +19,24 @@
           </ul>
         </div>
         <div id="container"></div>
+        <script id="entry-template" type="text/template">
+          <div class="input">
+            <label>thing:</label>
+            <input id="input2"></input>
+            <button>enter</button>
+          </div>
+        </script>
+        <script id="return-template" type="text/template">
+          <div class="entry">
+            <h1>{{title}}</h1>
+            <div class="body">
+              {{body}}
+            </div>
+          </div>
+        </script>
         <script id="errorTemplate" type="text/template">
           <img class="error" src="img/pac-404.png">
         </script>
-        <!-- <script id="addItem" type="text/template">
-            <label>ID:</label><input class="idAdd" type="text"></input><br>
-            <label>CONTENT:</label><input class="contentAdd" type="text"></input><br>
-
-            <button class="add">Add</button>
-        </script>
-        <script id="itemTemplate" type="text/template">
-            <input type="checkbox"></input> id: <%= id %> content: <%= content %>
-        </script>
-        <script id="deleteTemplate" type="text/template">
-             <button class="delete">Delete</button>
-        </script> -->
         <script src="js/lib/require.js" data-main="js/main.js"></script>
     </body>
 </html>

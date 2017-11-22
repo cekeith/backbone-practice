@@ -49,6 +49,6 @@ define([
       view.render();
     }
   });
-  
+
   return AppRouter;
 });

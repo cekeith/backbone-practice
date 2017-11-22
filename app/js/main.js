@@ -2,7 +2,8 @@ require.config({
   paths: {
     jquery: 'lib/jquery-min',
     underscore: 'lib/underscore-min',
-    backbone: 'lib/backbone-min'
+    backbone: 'lib/backbone-min',
+    handlebars: 'lib/handlebars-v4.0.11'
   }
 });
 
